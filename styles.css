@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 20px; /* Increased padding */
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Using flexbox for nav links */
+}
+
+.nav-links li {
+    margin-right: 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+}
+
+.cta-button {
+    background-color: #e74c3c; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em; /* Increased button font size */
+}
+
+#services {
+    padding: 50px 20px;
+}
+
+#services h2 {
+    text-align: center;
+    margin-bottom: 40px; /* Spacing below the heading */
+}
+
+.services-container {
+    display: flex; /* Flexbox for service items */
+    justify-content: space-around; /* Space between items */
+    flex-wrap: wrap; /* Wrap items to next line if needed */
+}
+
+.service-item {
+    text-align: center;
+    width: 30%; /* Width of service items */
+    margin: 10px; /* Margin around each item */
+    position: relative; /* Needed for rectangle and popup animation */
+    cursor: pointer; /* Indicate clickable items */
+    transition: transform 0.3s; /* Animation on hover */
+}
+
+.service-item:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.service-item h3 {
+    margin-top: 10px;
+}
+
+.rectangle {
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background: transparent; /* Fully transparent */
+    position: absolute; /* Positioning */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    opacity: 0; /* Start hidden */
+    transition: opacity 0.3s ease; /* Animation effect */
+    display: flex; /* Flexbox for centering text */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    color: white; /* Text color */
+    font-weight: bold; /* Bold text */
+}
+
+.service-item:hover .rectangle {
+    opacity: 1; /* Fade in on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+}
+
+#testimonials {
+    padding: 50px 20px;
+    background-color: #f4f4f4; /* Light background */
+    text-align: center;
+}
+
+blockquote {
+    margin: 20px 0; /* Spacing between quotes */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 80%; /* Width of the input fields */
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #e74c3c; /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c0392b; /* Darker shade on hover */
+}
